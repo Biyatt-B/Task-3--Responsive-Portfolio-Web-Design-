@@ -6,10 +6,11 @@ body {
 
 header {
     background-color: #8D8741;
+    height: fit-content;
     color: #fff;
     padding: 20px;
     text-align: center;
-    background-image: url(path/to/bg-image.jpg);
+    background-image: url(images/Header.jpg);
     background-size: cover;
 }
 
@@ -24,7 +25,7 @@ header nav {
 
 header nav ul {
     list-style: none;
-    margin: 0;
+    margin: 30px;
     padding: 0;
     display: flex;
     justify-content: center;
@@ -40,7 +41,9 @@ header nav a {
 }
 
 main {
+    color: #fff;
     padding: 20px;
+    background-image: url(images/Body.jpg);
 }
 
 section {
@@ -74,9 +77,7 @@ form {
     flex-direction: column;
 }
 
-form label,
-form input[type="submit"],
-form textarea {
+form label {
     width: 100%;
     padding: 10px;
     font-size: 16px;
@@ -84,16 +85,12 @@ form textarea {
     box-sizing: border-box;
 }
 
-form input[type="text"],
-form input[type="email"] {
-    height: 50px;
-}
-
-form textarea {
-    height: 150px;
-}
-
 form input[type="submit"] {
+    width: 20%;
+    padding: 10px;
+    font-size: 16px;
+    margin: auto;
+    box-sizing: border-box;
     background-color: #05684B;
     color: #fff;
     border: none;
@@ -101,8 +98,38 @@ form input[type="submit"] {
     cursor: pointer;
 }
 
+.button-container {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    display: grid;
+}
+
+form textarea {
+    width: 50%;
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    border-color: #d9cdcd;
+    border-width: 4px;
+    background-color: antiquewhite;
+}
+
+form input[type="text"],
+form input[type="email"] {
+    border-color: #d9cdcd;
+    background-color: antiquewhite;
+    border-width: 4px;
+    height: 50px;
+}
+
+form textarea {
+    height: 150px;
+}
+
 footer {
-    background-color: #333;
+    background-color: #000000;
     color: #fff;
     padding: 20px;
     text-align: center;
