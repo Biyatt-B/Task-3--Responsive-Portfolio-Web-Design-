@@ -1,0 +1,123 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #8D8741;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    background-image: url(path/to/bg-image.jpg);
+    background-size: cover;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 36px;
+}
+
+header nav {
+    margin-top: 20px;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+header nav ul li {
+    margin: 0 10px;
+}
+
+header nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+section h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+section p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+section ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+section li {
+    margin-bottom: 20px;
+}
+
+form {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+form label,
+form input[type="submit"],
+form textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+
+form input[type="text"],
+form input[type="email"] {
+    height: 50px;
+}
+
+form textarea {
+    height: 150px;
+}
+
+form input[type="submit"] {
+    background-color: #05684B;
+    color: #fff;
+    border: none;
+    height: 50px;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+    font-size: 16px;
+}
+
+@media (max-width: 767px) {
+    header nav ul {
+        flex-direction: column;
+    }
+    header nav ul li {
+        margin: 10px 0;
+    }
+}
